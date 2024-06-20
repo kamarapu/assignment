@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A comprehensive e-commerce website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS rule and syntax */
+        body {
+            font-family: Arial, sans-serif; /* Font family */
+            margin: 0; /* Margin properties */
+            padding: 0; /* Padding properties */
+        }
+        header, nav, main, aside, footer {
+            padding: 20px; /* Padding properties */
+            margin: 10px; /* Margin properties */
+            border: 1px solid #ccc; /* Border properties */
+        }
+        header {
+            background-color: #b3ffff; /* Color properties */
+            text-align: center;
+        }
+        nav {
+            background-color: #ffff; /* Color properties */
+            color: #fff; /* Color properties */
+        }
+        nav a {
+            color: #110e11; /* Color properties */
+            margin: 0 10px;
+            text-decoration: none;
+        }
+      
+        main {
+            display: flex;
+        }
+        aside {
+            width: 25%;
+        }
+        .image{
+            border-radius: 50%;
+            
+        }
+        section {
+            width: 75%;
+        }
+        footer {
+            background-color: #ffccb3; /* Color properties */
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #007bff; /* Color properties */
+            color: #fff; /* Color properties */
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Color properties */
+        }
+        /* Media query for responsiveness */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column;
+            }
+            aside, section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our E-Commerce Website for Books</h1>
+        <p>Your one-stop shop for every book you need</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </nav>
+    <main>
+        <aside>
+            <h2>Categories</h2>
+            <ul>
+                <li>Electronics</li>
+                <li>Fashion</li>
+                <li>Home & Garden</li>
+                <li>Sports</li>
+                <li>Health & Beauty</li>
+            </ul>
+        </aside>
+        <section>
+            <article>
+                <h2>Featured Authors</h2>
+                <figure>
+                    <img src="https://i.imgur.com/yXOvdOSs.jpg" alt="Product Image" class="image">
+                    <figcaption>Juli, Author</figcaption>
+                </figure>
+                <p>Juli is top selling author in our e-commerce website.</p>
+                <a href="#buy" class="btn">Buy Juli Books</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 E-Commerce Website. All rights reserved.</p>
+        <p>Email: info@ecommerce.com | Phone: (123) 456-7890</p>
+    </footer>
+
+    <script>
+        // Example JavaScript to manage website files
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Website is fully loaded and DOM is ready');
+        });
+    </script>
+</body>
+</html>
